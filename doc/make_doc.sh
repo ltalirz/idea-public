@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 rm -fr _build
 echo "### Making HTML documentation ###"
 make html
