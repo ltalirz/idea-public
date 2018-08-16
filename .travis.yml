@@ -4,7 +4,7 @@ python:
 
 install:
  - pip install --upgrade pip
- - pip install .[doc]
+ - pip install -e .[doc]
 
 script:
  - 'python -m unittest discover'
