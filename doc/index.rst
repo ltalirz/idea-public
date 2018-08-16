@@ -38,3 +38,5 @@ iDEA's main features are:
   comparison
 
 iDEA Contributors: |idea_contributors|
+
+iDEA is released under the `MIT license <https://opensource.org/licenses/MIT>`_
