@@ -18,7 +18,7 @@ iDEA's main features are:
 * Implementation of various approximate functionals (established and novel) for
   comparison
 
-A list of publications based on the iDEA code so far is available on [the iDEA code's home page](https://www-users.york.ac.uk/~rwg3/idea.html). 
+A list of publications based on the iDEA code so far is available on [the iDEA code's home page](https://www-users.york.ac.uk/~rwg3/idea.html).
 
 ## How to get iDEA
 
@@ -26,10 +26,10 @@ A list of publications based on the iDEA code so far is available on [the iDEA c
     cd idea-public
     pip install --user -e .[doc]
     python run.py # this runs an example system
-    
+
 ## Citing iDEA
 
-If you use iDEA, we would appreciate a reference to the iDEA code's home page, [https://www-users.york.ac.uk/~rwg3/idea.html](https://www-users.york.ac.uk/~rwg3/idea.html), and to one relevant publication from our group: you might consider: 
+If you use iDEA, we would appreciate a reference to the iDEA code's home page, [https://www-users.york.ac.uk/~rwg3/idea.html](https://www-users.york.ac.uk/~rwg3/idea.html), and to one relevant publication from our group: you might consider:
 
 * For exact solution of the many-particle Schrödinger equation and reverse engineering of the exact DFT/TDDFT Kohn-Sham potential: [M.J.P. Hodgson, J.D. Ramsden, J.B.J. Chapman, P. Lillystone, and R.W. Godby, Physical Review B (Rapid Communications) **88** 241102(R) (2013)](http://www-users.york.ac.uk/~rwg3/abst_81-110.html#Paper_87)
 * For Hartree-Fock and hybrid calculations: [A.R. Elmaslmane, J. Wetherell, M.J.P. Hodgson, K.P. McKenna and R.W. Godby, Physical Review Materials **2** 040801(R) (Rapid Communications) (2018)](http://www-users.york.ac.uk/~rwg3/abst_81-110.html#Paper_97)
@@ -40,8 +40,8 @@ If you use iDEA, we would appreciate a reference to the iDEA code's home page, [
 
 ## Documentation
 
-The [iDEA documentation](https://www.cmt.york.ac.uk/group_info/idea_html/) is
-hosted at the University of York.
+The [iDEA documentation](https://idea-code.readthedocs.io/en/latest/) is
+hosted on 'Read the Docs'.
 Besides explaining the inner workings and theory behind iDEA, it includes
-examples based on jupyter notebooks and pointers on 
-[how to contribute](https://www.cmt.york.ac.uk/group_info/idea_html/dev/add.html) to the development of iDEA.
+examples based on jupyter notebooks and pointers on
+[how to contribute](https://idea-code.readthedocs.io/en/latest/dev/add.html) to the development of iDEA.
