@@ -2,8 +2,7 @@ Adding to iDEA
 ==============
 
 The iDEA source code is managed  using the `git <https://git-scm.com/>`_
-version control system. Git offers a 
-`"learn git in 15 minutes" tutorial <https://try.github.io/>`_. 
+version control system. 
 
 Committing changes locally
 --------------------------
@@ -52,7 +51,7 @@ to comply with our :doc:`best practises <practises>`.
 
     .. code-block:: bash
 
-       git remote add fork git@github.com:ltalirz/idea-public.git
+       git remote add fork https://github.com/[GitHub Username]/idea-public.git
 
  3. Pull from your fork (to synchronize), and then push local changes back to github
 
