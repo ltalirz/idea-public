@@ -815,7 +815,7 @@ def main(parameters):
         results.add(v_h_td, 'td_lda{}_vh'.format(pm.lda.NE))
         results.add(v_xc_td, 'td_lda{}_vxc'.format(pm.lda.NE))
         results.add(density_td, 'td_lda{}_den'.format(pm.lda.NE))
-        results.add(current_density, 'td_lda_cur')
+        results.add(current_density, 'td_lda{}_cur'.format(pm.lda.NE))
         if pm.run.save:
             results.save(pm)
 

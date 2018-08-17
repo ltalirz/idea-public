@@ -36,8 +36,6 @@ If you use iDEA, we would appreciate a reference to the iDEA code's home page, [
 * For the iDEA code's local-density approximations from finite systems: [M.T. Entwistle, M.J.P. Hodgson, J. Wetherell, B. Longstaff, J.D. Ramsden and R.W. Godby, Physical Review B **94** 205134 (2016)](http://www-users.york.ac.uk/~rwg3/abst_81-110.html#Paper_92)
 * For the iDEA code's local-density approximation from the 1D homogeneous electron gas: [M.T. Entwistle, M. Casula and R.W. Godby, Physical Review B **97** 235143 (2018)](http://www-users.york.ac.uk/~rwg3/abst_81-110.html#Paper_98)
 
-
-
 ## Documentation
 
 The [iDEA documentation](https://idea-code.readthedocs.io/en/latest/) is
@@ -45,3 +43,7 @@ hosted on 'Read the Docs'.
 Besides explaining the inner workings and theory behind iDEA, it includes
 examples based on jupyter notebooks and pointers on
 [how to contribute](https://idea-code.readthedocs.io/en/latest/dev/add.html) to the development of iDEA.
+
+## License
+
+The iDEA code is released under the [MIT license](MIT)
