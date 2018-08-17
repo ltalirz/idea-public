@@ -8,7 +8,7 @@ Calculating the ground-state
 
 The Hamiltonian of a system of non-interacting electrons subject to a specified external potential is constructed, and from this a set of non-interacting orbitals are computed through solving the single-particle TISE:
 
-.. math:: \{\phi_{i}, \varepsilon_{i}\}.
+.. math:: \{\phi_{j}, \varepsilon_{j}\}.
 
 From this, the ground-state density is calculated:
 
@@ -17,4 +17,4 @@ From this, the ground-state density is calculated:
 Time-dependence
 ---------------
 
-After the ground-state is found, the perturbing potential is applied to the ground-state Hamiltonian, :math:`\hat{H} = \hat{H}_{0} + \delta V_{\mathrm{ext}}`. The system's evolution is calculated by propagating the ground-state orbitals through real time using the Crank-Nicholson method.
+After the ground-state is found, the perturbing potential is applied to the ground-state Hamiltonian, :math:`\hat{H} = \hat{H}_{0} + \hat{\delta V}_{\mathrm{ext}}`. The system's evolution is calculated by propagating the ground-state orbitals through real time using the Crank-Nicolson method.
