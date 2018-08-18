@@ -1,9 +1,1 @@
-matplotlib>=1.4
-numpy>=1.10
-scipy>=0.17
-cython>=0.22
-sphinx>=1.4
-numpydoc
-jupyter
-nbsphinx
-coverage
+-e .[doc]
