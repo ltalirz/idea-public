@@ -45,7 +45,7 @@ extensions = [
 ]
 
 setup(
-    name='iDEA',
+    name='idea-code',
     packages=[package_name],
     description = 'interacting Dynamic Electrons Approach',
     author = info_dict['authors_short'],

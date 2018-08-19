@@ -6,13 +6,19 @@ Installation requirements
 -------------------------
 
  * `Python <http://www.python.org>`_ 3.3 or later
- * `numpy <http://www.numpy.org>`_ 1.10 or later
- * `scipy <http://www.scipy.org>`_ 0.17 or later
- * `Cython <http://cython.org>`_ 0.22 or later
- * *(optional)* `matplotlib <http://matplotlib.org/>`_ 1.4 or later for post-processing
+ * `pip <https://pypi.org/project/pip/>`_ 10.0 or later
+ * *(optional)* `pandoc <https://pandoc.org/>`_ for compiling the documentation
 
 Installing iDEA
 ----------------
+
+The simplest way to install iDEA is to install the latest
+stable version directly from PYPI:
+
+.. code-block:: bash
+    pip install --user idea-code
+
+If you are planning to modify iDEA, get the latest version from the git repository:
 
 .. code-block:: bash
 

@@ -8,6 +8,7 @@
 *outputs/
 iDEA/*.c
 build/
+dist/
 /dev*/ 
 /doc/apidoc/*.rst
 /doc/_build/*
