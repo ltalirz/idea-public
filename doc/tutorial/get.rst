@@ -22,7 +22,7 @@ Installing iDEA
    # Install & compile iDEA for your unix user
    # (including packages for generating the documentation)
    cd idea-public
-   pip install --user -e .[doc]
+   pip install --user -e .[doc] --no-build-isolation
 
    # Run example calculation
    python run.py

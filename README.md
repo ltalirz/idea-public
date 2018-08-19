@@ -24,7 +24,7 @@ A list of publications based on the iDEA code so far is available on [the iDEA c
 
     git clone https://github.com/godby-group/idea-public.git
     cd idea-public
-    pip install --user -e .[doc]
+    pip install --user -e .[doc] --no-build-isolation
     python run.py # this runs an example system
 
 ## Citing iDEA
