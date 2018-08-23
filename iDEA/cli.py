@@ -201,7 +201,7 @@ def examples_cli():
     If this fails, print the path to the example directory.
     """
     import pkg_resources
-    example_dir = pkg_resources.resource_filename('iDEA', 'examples')
+    example_dir = pkg_resources.resource_filename('iDEA', '../examples')
 
     exit_code = os.system('jupyter notebook {}'.format(example_dir))
     if exit_code != 0:
