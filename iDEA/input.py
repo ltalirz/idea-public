@@ -270,6 +270,9 @@ class Input(object):
         """Checks validity of input parameters."""
         pm = self
 
+        if pm.run.module != 'iDEA':
+            raise ValueError("module must be set to 'iDEA' (dynamic loading of modules disabled in PYPI version)")
+
         # Time-dependence
         if pm.run.time_dependence == True:
             if pm.run.HYB == True:

@@ -47,6 +47,7 @@ extensions = [
 setup(
     name='idea-code',
     packages=[package_name],
+    package_data={'': ['examples/*/*.ipynb']},
     description = 'interacting Dynamic Electrons Approach',
     author = info_dict['authors_short'],
     license = 'MIT',
@@ -74,4 +75,12 @@ setup(
     cmdclass = {'clean': clean_inplace},
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
+    entry_points = {
+        'console_scripts': [
+            'idea-run=iDEA.cli:run_cli',
+            'idea-video=iDEA.cli:video_cli',
+            'idea-optimize=iDEA.cli:optimize_cli',
+            'idea-examples=iDEA.cli:examples_cli',
+        ],
+    },
 )

@@ -31,7 +31,7 @@ If you are planning to modify iDEA, get the latest version from the git reposito
    pip install --user -e .[doc] --no-build-isolation
 
    # Run example calculation
-   python run.py
+   idea-run
 
 Updating iDEA
 -------------

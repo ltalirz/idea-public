@@ -5,11 +5,11 @@ As it is a python package there are many different ways of running iDEA.
 
 Using the iDEA code directly
 ----------------------------
-Simply edit the parameters file :code:`parameters.py` and run
+Use `idea-run` to produce the default parameters file: 
 
 .. code-block:: bash
 
-    python run.py
+    idea-run
 
 In order not to overwrite results from different calculations,
 make sure to choose different run names for different inputs
@@ -28,9 +28,8 @@ added to PYTHONPATH. To test this has worked simply perform the following
 .. code-block:: bash
 
     cd $test_folder                  # some folder you have created
-    cp $path_to_iDEA/parameters.py . # where you have downloaded iDEA
-    cp $path_to_iDEA/run.py .
-    python run.py
+    cp $path_to_iDEA/iDEA/parameters.py . # where you have downloaded iDEA
+    idea-run
 
 Here, we are running iDEA much in the same way as before but your
 :code:`$test_folder` can be located anywhere on your computer.

@@ -32,7 +32,7 @@ For development, get the latest version from the git repository:
     git clone https://github.com/godby-group/idea-public.git
     cd idea-public
     pip install --user -e .[doc] --no-build-isolation
-    python run.py # this runs an example system
+    idea-run
 
 ## Documentation
 
