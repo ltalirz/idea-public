@@ -1,1 +1,2 @@
--e .[doc]
+pip>=10
+-e .[doc] --no-build-isolation
