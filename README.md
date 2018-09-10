@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/godby-group/idea-public.svg?branch=master)](https://travis-ci.org/godby-group/idea-public) [![Docs status](https://readthedocs.org/projects/idea-code/badge)](http://idea-code.readthedocs.io/)
+
 # iDEA
 
 The [interacting Dynamic Electrons Approach (iDEA)](https://www-users.york.ac.uk/~rwg3/idea.html) is a Python-Cython software
