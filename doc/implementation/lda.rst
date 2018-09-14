@@ -8,7 +8,7 @@ Calculating the ground-state
 
 As an initial guess, the Kohn-Sham (KS) potential :math:`V_{\mathrm{KS}}` is approximated as the external potential :math:`V_{\mathrm{ext}}`. From this a set of non-interacting orbitals are computed through solving the KS (single-particle Schrödinger) equations:
 
-.. math:: \{\phi_{i}, \varepsilon_{i}\},
+.. math:: \{\phi_{j}, \varepsilon_{j}\},
 
 and from these the density :math:`n(x)` is calculated. 
 
@@ -23,12 +23,12 @@ These steps are repeated until we reach self-consistency, i.e. :math:`V_{\mathrm
 Time-dependence
 ---------------
 
-After an approximate ground-state :math:`V_{\mathrm{KS}}` is found, the perturbing potential is applied to the ground-state Hamiltonian, :math:`\hat{H} = \hat{H}_{0} + \delta V_{\mathrm{ext}}`. The system's evolution is calculated by propagating the ground-state KS orbitals through real time using the Crank-Nicholson method, and applying the LDA adiabatically (ALDA). 
+After an approximate ground-state :math:`V_{\mathrm{KS}}` is found, the perturbing potential is applied to the ground-state Hamiltonian, :math:`\hat{H} = \hat{H}_{0} + \hat{\delta V}_{\mathrm{ext}}`. The system's evolution is calculated by propagating the ground-state KS orbitals through real time using the Crank-Nicolson method, and applying the LDA adiabatically (ALDA). 
 
 References
 ----------
 
-.. [Entwistle2018] M. T. Entwistle, M. Casula, and R. W. Godby, Phys. Rev. B 97, 235143 (2018).
+.. [Entwistle2018] M. T. Entwistle, M. Casula, and R. W. Godby, Comparison of local density functionals based on electron gas and finite systems, Phys. Rev. B 97, 235143 (2018).
 
 .. [Kresse1996]	Kresse, G. & Furthmüller, J. Efficiency of ab-initio total energy calculations for metals and semiconductors using a plane-wave basis set. Computational Materials Science 6, 15–50 (1996). doi: 10.1016/0927-0256(96)00008-0
 

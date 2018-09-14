@@ -223,7 +223,8 @@ def main(parameters):
                 # Normalise the wavefunction 
                 norm = npla.norm(wavefunction)*np.sqrt(pm.space.delta)
                 wavefunction /= norm
-                string = 'NON: t = {:.5f}, normalisation = {}'.format(i*pm.sys.deltat, norm**2)
+                norm = npla.norm(wavefunction)*np.sqrt(pm.space.delta)
+                string = 'NON: t = {:.5f}, normalisation = {}'.format(i*pm.sys.deltat, norm)
                 pm.sprint(string, 1, newline=False)
   
                 # Calculate the density

@@ -71,7 +71,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'iDEA'
-copyright = u'2010 - 2017, the iDEA contributors'
+copyright = u'2010 - 2018, the iDEA contributors'
 author = info.authors_long
 
 # The version info for the project you're documenting, acts as replacement for
