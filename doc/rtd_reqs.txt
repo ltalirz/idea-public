@@ -9,4 +9,4 @@ numpydoci
 jupyter
 nbsphinx
 coverage
--e .
+iDEA
