@@ -23,7 +23,7 @@ def draw(pm):
    pm.sprint('  |{:^58}|'.format('Public Release {}'.format(info.release)))
    pm.sprint('  |                                                          |')
    sha1 = info.get_sha1()
-   if sha1 != "Unknown":
+   if sha1 is not None:
        pm.sprint('  |{:^58}|'.format('git commit hash'))
        pm.sprint('  |{:^58}|'.format(sha1))
        pm.sprint('  |{:^58}|'.format(''))

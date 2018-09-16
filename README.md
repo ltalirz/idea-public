@@ -40,11 +40,13 @@ If you use iDEA, we would appreciate a reference to the iDEA code's home page, [
 
 ## Documentation
 
-The [iDEA documentation](https://idea-code.readthedocs.io/en/latest/) is
-hosted on 'Read the Docs'.
-Besides explaining the inner workings and theory behind iDEA, it includes
-examples based on jupyter notebooks and pointers on
+The [iDEA documentation](https://idea-code.readthedocs.io/en/latest/) 
+explains the inner workings and theory behind iDEA, and includes pointers on
 [how to contribute](https://idea-code.readthedocs.io/en/latest/dev/add.html) to the development of iDEA.
+
+If you'd like to try out running iDEA, check out the 
+[iDEA demos](https://github.com/godby-group/idea-demos) which use live
+jupyter notebooks.
 
 ## License
 

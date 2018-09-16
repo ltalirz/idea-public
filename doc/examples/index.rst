@@ -2,25 +2,7 @@
 Examples
 *********
 
-You'll find a collection of `jupyter notebooks <http://jupyter.org/>`_ in the
-:code:`examples/` subdirectory. Once you've installed iDEA on your computer, you
-can run these examples interactively via
-
-.. code-block:: bash
-
-    cd examples/
-    jupyter notebook
-
-
-If you prefer to get a first impression without installing iDEA, 
-you find static HTML versions of the examples below.
-
-.. toctree::
-   :titlesonly:
-
-   get_started_basics.ipynb
-   get_started_further.ipynb
-   well.ipynb
-   double_well.ipynb
-   tunneling.ipynb
-   convergence.ipynb
+For examples of how to use iDEA, please navigate to the
+`iDEA demos <https://github.com/godby-group/idea-demos>`, where
+you'll find a collection of `jupyter notebooks <http://jupyter.org/>`_
+illustrating how to use the code. 
