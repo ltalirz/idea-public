@@ -348,33 +348,6 @@ rst_epilog = '.. |idea_contributors| replace:: {}'.format(info.authors_long)
 
 
 # -- Modifications for Readthedocs ----------------------------------------
-def symlink_example_notebooks(doc_dir):
-    """Symlink example Jupyter notebooks
-    
-    symlinks example jupyter notebooks so that they can be
-    included into the documentation.
-    """
-    examples_dir = os.path.join(doc_dir, os.pardir, 'examples')
-    doc_examples_dir = os.path.join(doc_dir, 'examples')
-
-    to_link = [
-        '01_get_started_basics/get_started_basics.ipynb',
-        '02_get_started_further/get_started_further.ipynb',
-        '03_well/well.ipynb',
-        '04_double_well/double_well.ipynb',
-        '05_tunneling/tunneling.ipynb',
-        '06_convergence/convergence.ipynb'
-    ]
-    for nb_path in to_link:
-        nb = os.path.basename(nb_path)
-        try:
-            os.symlink(os.path.join(examples_dir, nb_path), os.path.join(doc_examples_dir, nb))
-        except OSError, e:
-            if e.errno == errno.EEXIST:
-                pass
-            else:
-                raise e
-
 def run_apidoc(_):
     """Runs sphinx-apidoc when building the documentation.
 
@@ -386,9 +359,6 @@ def run_apidoc(_):
     doc_dir = os.path.abspath(os.path.dirname(__file__))
     apidoc_dir = os.path.join(doc_dir, 'apidoc')
     package_dir = os.path.join(doc_dir, os.pardir, 'iDEA')
-
-    print("Symlinking example notebooks")
-    symlink_example_notebooks(doc_dir)
 
     # In #1139, they suggest the route below, but for me this ended up
     # calling sphinx-build, not sphinx-apidoc
