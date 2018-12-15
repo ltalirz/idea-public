@@ -434,7 +434,7 @@ def to_anim(pm, names, data, td, dim, file_name=None, step=1):
             im_ani = animation.ArtistAnimation(fig, ims, interval=50, repeat_delay=3000,blit=True)
             mfile = "animations/{}.mp4".format(file_name)
             print("making movie {}... (may take some time)".format(mfile))
-            plt.rcParams['animation.ffmpeg_path'] = ffmpeg_path
+            plt.rcParams['animation.ffmpeg_path'] = get_ffmpeg_path()
             writer = animation.FFMpegWriter(fps=15, metadata=dict(artist='Me'), bitrate=1800)
             im_ani.save(mfile, writer=writer)
         if(dim == 3):
