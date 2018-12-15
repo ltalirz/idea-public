@@ -8,4 +8,5 @@ flexibility in bridging the gap between model systems and ab initio
 descriptions.
 """
 from __future__ import print_function
+from .info import release as __version__
 
