@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/godby-group/idea-public.svg?branch=master)](https://travis-ci.org/godby-group/idea-public) [![Docs status](https://readthedocs.org/projects/idea-code/badge)](http://idea-code.readthedocs.io/)
+
 # iDEA
 
 The [interacting Dynamic Electrons Approach (iDEA)](https://www-users.york.ac.uk/~rwg3/idea.html)
@@ -23,23 +25,29 @@ A list of publications based on the iDEA code so far is available on [the iDEA c
 
 ## How to get iDEA
 
-Install the latest stable version directly from PYPI:
+The quickest way to try out iDEA are the
+[iDEA demos](https://github.com/godby-group/idea-demos), which allow to run iDEA directly in the browser
+using live jupyter notebooks.
 
-    pip install --user idea-code
+In order to install iDEA locally, type:
+
+```bash
+pip install --user idea-code
+```
 
 For development, get the latest version from the git repository:
 
-    git clone https://github.com/godby-group/idea-public.git
-    cd idea-public
-    pip install --user -e .[doc] --no-build-isolation
-    idea-run
+```bash
+git clone https://github.com/godby-group/idea-public.git
+cd idea-public
+pip install --user -e .[doc] --no-build-isolation
+idea-run
+```
 
 ## Documentation
 
-The [iDEA documentation](https://idea-code.readthedocs.io/en/latest/) is
-hosted on 'Read the Docs'.
-Besides explaining the inner workings and theory behind iDEA, it includes
-examples based on jupyter notebooks and pointers on
+The [iDEA documentation](https://idea-code.readthedocs.io/en/latest/) 
+explains the inner workings and theory behind iDEA, and includes pointers on
 [how to contribute](https://idea-code.readthedocs.io/en/latest/dev/add.html) to the development of iDEA.
 
 ## Citing iDEA

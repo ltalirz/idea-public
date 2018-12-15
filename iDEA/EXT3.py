@@ -587,6 +587,7 @@ def solve_real_time(pm, A_reduced, C_reduced, wavefunction, reduction_matrix, ex
         norm = npla.norm(wavefunction)*(np.sqrt(pm.space.delta)**3)
         if(pm.sys.im == 0):
             wavefunction /= norm
+            norm = npla.norm(wavefunction)*(np.sqrt(pm.space.delta)**3)
        
         # Calculate the density 
         wavefunction_3D = wavefunction.reshape(pm.space.npt, pm.space.npt, pm.space.npt)
@@ -609,7 +610,7 @@ def solve_real_time(pm, A_reduced, C_reduced, wavefunction, reduction_matrix, ex
                 pm.sprint(string, 1, newline=False, savelog=False)
         else:
             string_one = 'residual: {:.5f}'.format(npla.norm(A_reduced*wavefunction_reduced - b_reduced))
-            string_two = 'normalisation: {:.5f}'.format(norm**2)
+            string_two = 'normalisation: {:.5f}'.format(norm)
             string_three = '--------------------------------------------------------------'
             if(i % 100 == 0):
                 pm.sprint(string_one, 0)

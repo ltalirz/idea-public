@@ -2,21 +2,7 @@
 Examples
 *********
 
-You'll find a collection of `jupyter notebooks <http://jupyter.org/>`_ in the
-:code:`examples/` subdirectory. Once you've installed iDEA on your computer, you
-can run these examples interactively via
-
-.. code-block:: bash
-
-    cd examples/
-    jupyter notebook
-
-
-If you prefer to get a first impression without installing iDEA, 
-you find static HTML versions of the examples below.
-
-.. toctree::
-    :titlesonly:
-    :glob:
-
-    notebooks/*
+For examples of how to use iDEA, please see the
+`iDEA demos <https://github.com/godby-group/idea-demos>`_, 
+a collection of `jupyter notebooks <http://jupyter.org/>`_
+illustrating how to use the code. 

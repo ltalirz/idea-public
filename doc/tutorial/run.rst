@@ -40,14 +40,30 @@ functionality directly in a python script.
 The example below uses a python loop to converge the grid spacing for an iDEA
 calculation of a test system of non-interacting electrons in a harmonic well.
 
-.. literalinclude:: /../examples/06_convergence/run.py
+.. code-block:: python
 
-In order to run this example, do
+    from iDEA.input import Input
+    
+    # read parameters file
+    inp = Input.from_python_file('parameters.py')
+    inp.run.verbosity = 'low'
+    
+    # Converging xmax parameter
+    for xmax in [4,6,8,10]:
+        # Note: the dependent sys.deltax is automatically updated
+        inp.sys.xmax = xmax
+    
+        # perform checks on input parameters
+        inp.check()
+        inp.execute()
+        E = inp.results.non.gs_non_E
+        print(" xmax = {:4.1f}, E = {:6.4f} Ha".format(xmax,E))
+
+In order to run this example, save it to a file ``run.py`` and do
 
 .. code-block:: bash
 
-    cd $path_to_iDEA/examples/06_convergence
-    python run.py  # assuming you already added iDEA to your PYTHONPATH
+    python run.py
 
 
 Using the iDEA package in an ipython shell
