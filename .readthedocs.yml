@@ -2,7 +2,5 @@ requirements_file: doc/rtd_reqs.txt
 build:
   image: latest
 python:
-  pip_install: true
   version: 3.6
-  extra_requirements:
-  - "docs"
+  use_system_site_packages: true
