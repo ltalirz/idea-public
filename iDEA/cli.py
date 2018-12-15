@@ -3,25 +3,6 @@
 from __future__ import division
 from __future__ import print_function
 
-# print splash
-print('                                                                ')
-print('              *   *   *    ****     *****     ****              ')
-print('              *   *        *   *    *        *    *             ')
-print('              *   *   *    *    *   *       *      *            ')
-print('              *   *   *    *     *  *****   *      *            ')
-print('              *   *   *    *    *   *       *      *            ')
-print('               * *    *    *   *    *        *    *             ')
-print('                *     *    ****     *****     ****              ')
-print('                                                                ')
-print('  +------------------------------------------------------------+')
-print('  |                    Visualise iDEA Outputs                  |')
-print('  |                                                            |')
-print('  |                   Created by Jack Wetherell                |')
-print('  |                    The University of York                  |')
-print('  +------------------------------------------------------------+')
-print('                                                                ')
-
-# imports
 import os
 import sys
 import shutil
@@ -62,6 +43,25 @@ def video_cli():
     """
     import iDEA.plot
 
+    # print splash
+    print('                                                                ')
+    print('              *   *   *    ****     *****     ****              ')
+    print('              *   *        *   *    *        *    *             ')
+    print('              *   *   *    *    *   *       *      *            ')
+    print('              *   *   *    *     *  *****   *      *            ')
+    print('              *   *   *    *    *   *       *      *            ')
+    print('               * *    *    *   *    *        *    *             ')
+    print('                *     *    ****     *****     ****              ')
+    print('                                                                ')
+    print('  +------------------------------------------------------------+')
+    print('  |                    Visualise iDEA Outputs                  |')
+    print('  |                                                            |')
+    print('  |                   Created by Jack Wetherell                |')
+    print('  |                    The University of York                  |')
+    print('  +------------------------------------------------------------+')
+    print('                                                                ')
+
+
     # import parameters file
     print('loading in parameters file...')
     pickle_file = "parameters.p"
@@ -74,8 +74,8 @@ def video_cli():
         sys.path.insert(0,os.getcwd())
         import parameters as pm
     else:
-        print("neither {} nor {} found. File must have different name.".format(pickle_file, python_file))
-        name = input("enter name of parameters file (without.py): ")
+        print("Neither '{}' nor '{}' found. Unable to load parameters.".format(pickle_file, python_file))
+        name = input("Please enter name of parameters python file (without .py): ")
         pm = __import__(name)
 
     # gather file information from user
