@@ -29,14 +29,19 @@ The quickest way to try out iDEA are the
 [iDEA demos](https://github.com/godby-group/idea-demos), which allow to run iDEA directly in the browser
 using live jupyter notebooks.
 
-In order to install iDEA locally, type:
+### Prerequisites
 
+ * `python >= 3.3`
+ * `pip >= 10`
+
+### Installation
+
+From PYPI:
 ```bash
 pip install --user idea-code
 ```
 
 For development, get the latest version from the git repository:
-
 ```bash
 git clone https://github.com/godby-group/idea-public.git
 cd idea-public
