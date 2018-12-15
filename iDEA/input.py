@@ -270,6 +270,9 @@ class Input(object):
         """Checks validity of input parameters."""
         pm = self
 
+        if pm.run.module != 'iDEA':
+            raise ValueError("run.module must be set to 'iDEA' (dynamic loading of modules disabled in PYPI version)")
+
         # Time-dependence
         if pm.run.time_dependence == True:
             if pm.run.HYB == True:
@@ -375,11 +378,11 @@ class Input(object):
     def read_from_python_file(self,filename):
         """Update Input from Python script."""
         if not os.path.isfile(filename):
-            raise IOError("Could not find file {}".format(filename))
+            raise IOError("Could not find input file '{}'".format(filename))
 
         module, ext = os.path.splitext(filename)
         if ext != ".py":
-            raise IOError("File {} does not have .py extension.".format(filename))
+            raise IOError("Input file '{}' does not have .py extension.".format(filename))
 
         # import module into object
         pm = importlib.import_module(module)
