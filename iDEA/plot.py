@@ -10,7 +10,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
-ffmpeg_path = '/shared/storage/physrwg/trunk/iDEAL/packages/ffmpeg-3.4.1-64bit-static/ffmpeg'
+
+# find ffmpeg
+print('locating ffmpeg to process animations...')
+try:
+    ffmpeg_path = os.popen('which ffmpeg').read().rstrip()
+    print('ffmpeg found at {}'.format(ffmpeg_path))
+except:
+    raise ValueError('failed to find ffmpeg. Install it and try again.')
 
 def read_quantity(pm, name):
     r"""Read a file from a pickle file in (/raw)
