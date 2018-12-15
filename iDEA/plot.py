@@ -11,13 +11,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 
-# find ffmpeg
-print('locating ffmpeg to process animations...')
-try:
-    ffmpeg_path = os.popen('which ffmpeg').read().rstrip()
-    print('ffmpeg found at {}'.format(ffmpeg_path))
-except:
-    raise ValueError('failed to find ffmpeg. Install it and try again.')
+def get_ffmpeg_path():
+    """Find path to ffmpeg binary."""
+    import shutil
+
+    FFMPEG = shutil.which('ffmpeg')
+    if FFMPEG is None:
+        raise ValueError('Failed to find ffmpeg executable in PATH. Please install it and try again.')
+    return FFMPEG
 
 def read_quantity(pm, name):
     r"""Read a file from a pickle file in (/raw)
@@ -347,7 +348,7 @@ def to_anim(pm, names, data, td, dim, file_name=None, step=1):
             im_ani = animation.ArtistAnimation(fig, ims, interval=50, repeat_delay=3000,blit=True)
             mfile = "animations/{}.mp4".format(file_name)
             print("making movie {}... (may take some time)".format(mfile))
-            plt.rcParams['animation.ffmpeg_path'] = ffmpeg_path
+            plt.rcParams['animation.ffmpeg_path'] = get_ffmpeg_path()
             writer = animation.FFMpegWriter(fps=15, metadata=dict(artist='Me'), bitrate=1800)
             im_ani.save(mfile, writer=writer)
     if td == True:
@@ -382,7 +383,7 @@ def to_anim(pm, names, data, td, dim, file_name=None, step=1):
             mfile = "animations/{}.mp4".format(file_name)
             print("making movie {}... (may take some time)".format(mfile))
             rc('animation', html='html5')
-            plt.rcParams['animation.ffmpeg_path'] = ffmpeg_path
+            plt.rcParams['animation.ffmpeg_path'] = get_ffmpeg_path()
             frames = []
             for i in range(0, data[0].shape[0], int(step)):
                 frames.append(i)
