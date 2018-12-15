@@ -14,7 +14,7 @@ Use `idea-run` to produce the default parameters file:
 In order not to overwrite results from different calculations,
 make sure to choose different run names for different inputs
 
-.. literalinclude:: /../parameters.py
+.. literalinclude:: /../iDEA/parameters.py
     :lines: 1-20
     :emphasize-lines: 9
 

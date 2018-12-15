@@ -355,7 +355,7 @@ def symlink_example_notebooks(doc_dir):
     included into the documentation.
     """
     examples_dir = os.path.join(doc_dir, os.pardir, 'examples')
-    doc_examples_dir = os.path.join(doc_dir, 'examples')
+    doc_examples_dir = os.path.join(doc_dir, 'examples', 'notebooks')
 
     to_link = [
         '01_get_started_basics/get_started_basics.ipynb',

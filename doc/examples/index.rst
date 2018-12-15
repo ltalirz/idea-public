@@ -16,11 +16,7 @@ If you prefer to get a first impression without installing iDEA,
 you find static HTML versions of the examples below.
 
 .. toctree::
-   :titlesonly:
+    :titlesonly:
+    :glob:
 
-   get_started_basics.ipynb
-   get_started_further.ipynb
-   well.ipynb
-   double_well.ipynb
-   tunneling.ipynb
-   convergence.ipynb
+    notebooks/*

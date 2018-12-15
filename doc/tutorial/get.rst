@@ -16,6 +16,7 @@ The simplest way to install iDEA is to install the latest
 stable version directly from PYPI:
 
 .. code-block:: bash
+
     pip install --user idea-code
 
 If you are planning to modify iDEA, get the latest version from the git repository:
