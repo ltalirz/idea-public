@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 rm -fr _build
 echo "### Making HTML documentation ###"
